@@ -1,0 +1,32 @@
+<git 사용하기>
+
+아마 당신은 두가지 방법으로 하고 있을 것이다
+
+방법 1 - url그대로 클론해서 그 안에서 작업한다
+
+방법2 - 별도의 과제 폴더에서 작업하다 클론해서 한번에 옮긴다
+
+방법3 - 다음 방법을 쓰면 편할 수도 있다. 
+
+1. 과제 폴더를 깃 저장소로 만들기 - git init
+2. 과제 원격 저장소 연결 
+    
+    ```bash
+    git remote add 내가쓸이름(보통 origin 씀) 원격저장소url
+    ```
+    
+3. 이제 과제 폴더로 다음 작업들을 한다.
+    
+    ```bash
+    git add . # 내가 업로드 할 파일들 . 은 모두를 말함 (*과 .은 다른건데 궁금하면 찾아보셈)
+    git commit -m "당신이 쓸 내용"'
+    git push 내가쓸이름에쓴거 당신의branch(아마 master 혹은 main일 것임)
+    
+    git status # 이것으로 현재 상황을 볼 수 있음 git add 전이랑 후에 써서 확인하면 좋다.
+    ```
+    
+4. git push를 해서 내 과제를 원격 저장소에 보낸다.
+
+궁금하면 읽어보면 좋다
+
+[https://git-scm.com/book/ko/v2/Git의-기초-리모트-저장소](https://git-scm.com/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-%EB%A6%AC%EB%AA%A8%ED%8A%B8-%EC%A0%80%EC%9E%A5%EC%86%8C)
